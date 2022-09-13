@@ -1,0 +1,14 @@
+int main()
+{
+   int list[MAX], num;
+   //clrscr();
+   printf("\n*** Enter the number of elements Maximum [10] ***\n");
+   scanf("%d",&num);
+   read_data(list,num);
+   printf("\n\nElements in the list before sorting are:\n");
+   print_data(list,num);
+   quicksort(list,0,num-1);
+   printf("\n\nElements in the list after sorting are:\n");
+   print_data(list,num);
+   return 0;
+}
